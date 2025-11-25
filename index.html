@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>AL CONSULTORIA E SERVIÇOS LTDA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            font-size: 22px;
+            color: #fff;
+            background-color: #0a0a0a;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.6);
+            z-index: 10;
+        }
+
+        header nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        section {
+            padding: 120px 10%;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('https://plus.unsplash.com/premium_vector-1682298548116-498372adf1aa?w=1200&auto=format&fit=crop&q=60') no-repeat center/cover;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left:0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.65);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #ff0044;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .about img {
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        .services, .benefits, .process, .contacts, .form-block {
+            background: #111;
+            margin-top: 30px;
+            border-radius: 10px;
+            padding: 50px;
+        }
+
+        .contacts-full {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            background: #000;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        .form-small {
+            background: #222;
+            padding: 40px;
+            width: 400px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            font-size: 20px;
+            background: #ff0044;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 24px; white-space: nowrap;">
+        <strong>AL CONSULTORIA E SERVIÇOS LTDA.</strong>
+    </div>
+    <nav style="
+        display: flex;
+        gap: 18px;
+        max-width: 60%;
+        flex-wrap: nowrap;
+    ">
+
+    </nav>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <h1><strong>AL CONSULTORIA E SERVIÇOS LTDA.</strong></h1>
+        <p style="max-width: 700px;">
+            Transformamos desafios corporativos em estratégias objetivas de crescimento. Nossa equipe atua na fronteira entre gestão, tecnologia e inovação,
+            oferecendo soluções adaptadas à realidade de cada negócio em evolução.
+        </p>
+        <a href="#contatos" class="btn">Contatos</a>
+    </div>
+</section>
+
+<!-- 2. SOBRE NÓS -->
+<section id="sobre">
+    <h2>Quem Somos de Verdade</h2>
+    <div class="about">
+        <div>
+            <p>
+                A AL CONSULTORIA E SERVIÇOS LTDA nasceu para apoiar empresas que buscam clareza estratégica,
+                estrutura organizacional sólida e suporte tecnológico confiável. Nossa abordagem vai além da consultoria tradicional:
+                mergulhamos profundamente nos processos internos do cliente, identificando lacunas e propondo soluções sob medida.
+            </p>
+            <p>
+                Atuamos com foco em eficiência, otimização contínua e transformação digital sustentável. 
+                Nosso objetivo é construir bases duradouras que permitam às empresas crescerem com segurança e assertividade.
+            </p>
+        </div>
+        <img src="https://plus.unsplash.com/premium_vector-1710425434883-777491e24a16?w=1200&auto=format&fit=crop&q=60">
+    </div>
+</section>
+
+<!-- 3. SERVIÇOS -->
+<section id="servicos" class="services">
+    <h2>Nossas Soluções Inteligentes</h2>
+
+    <h3> Consultoria em Gestão Empresarial </h3>
+    <p>
+        Desenvolvemos planos estratégicos que alinham visão, operação e resultados. Analisamos indicadores,
+        identificamos pontos de melhoria e implementamos práticas modernas de gestão para maximizar desempenho.
+    </p>
+
+    <h3> Consultoria de Desenvolvimento e Estruturação de Negócios </h3>
+    <p>
+        Ajudamos empresas a expandirem ou consolidarem seus modelos, estudando mercados, avaliando riscos e criando rotinas
+        que fortalecem a competitividade e promovem crescimento sustentável.
+    </p>
+
+    <h3> Suporte & Gestão de Tecnologia da Informação </h3>
+    <p>
+        Oferecemos suporte técnico completo, organização e proteção de infraestrutura digital, garantindo que a operação 
+        funcione de forma rápida, segura e eficiente, com foco na redução de falhas e interrupções.
+    </p>
+</section>
+
+<!-- 4. BENEFÍCIOS -->
+<section id="beneficios" class="benefits">
+    <h2>Por Que Trabalhar Conosco</h2>
+
+    <h3>Visão Estratégica Precisa</h3>
+    <p>Nossa equipe combina experiência prática com análise profunda, trazendo clareza para decisões críticas e construção de planos sólidos.</p>
+
+    <h3>Abordagem Sob Medida</h3>
+    <p>Cada cliente recebe soluções personalizadas, evitando modelos genéricos e garantindo resultados alinhados às necessidades reais.</p>
+
+    <h3>Integração entre Gestão e Tecnologia</h3>
+    <p>Unimos consultoria empresarial com suporte tecnológico, criando um ecossistema completo de eficiência operacional.</p>
+</section>
+
+<!-- 5. PROCESSO -->
+<section id="processo" class="process">
+    <h2>Como Conduzimos Cada Projeto</h2>
+
+    <h3>1. Diagnóstico Profundo</h3>
+    <p>Mapeamos processos, identificamos falhas, entendemos metas e analisamos a cultura operacional do cliente.</p>
+
+    <h3>2. Planejamento Estratégico</h3>
+    <p>Desenvolvemos soluções práticas e escaláveis, definindo ações claras, prazos e indicadores de desempenho.</p>
+
+    <h3>3. Implementação & Acompanhamento</h3>
+    <p>Acompanhamos a aplicação das melhorias e realizamos ajustes contínuos para garantir resultados consistentes.</p>
+</section>
+
+<!-- 6. CONTATOS -->
+<section id="contatos" class="contacts-full">
+    <div class="contacts">
+        <h2>Vamos Construir Algo Extraordinário</h2>
+        <p>
+            Entre em contato conosco pelo e-mail para iniciarmos uma conversa sobre como podemos elevar o desempenho 
+            e a organização da sua empresa. Estamos prontos para transformar suas ideias em resultados concretos.
+        </p>
+        <p>
+            Nosso compromisso é trazer clareza, eficiência e inovação a cada projeto.
+        </p>
+        <p><strong>E-mail:</strong> team@alconsultoriaeservicos.pro</p>
+        <p><strong>Endereço:</strong> Rua Afonso Pena 592 Sala 03 63, 34300-000 Rio Acima</p>
+    </div>
+</section>
+
+<!-- 7. FORMULÁRIO -->
+<section class="form-block">
+    <h2>Deixe Sua Mensagem</h2>
+    <div class="form-small">
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea rows="4" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!-- 8. FOOTER -->
+<footer>
+    © 2025 AL CONSULTORIA E SERVIÇOS LTDA. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
